@@ -6,7 +6,7 @@
 @import "tailwindcss";
 
 @theme{
-  --font-ClashGrotesk: "Clash Grotesk", sans-serif;
+  --font-ClashGrotesk: "Clash Grotesk","Space Grotesk", sans-serif;
 }
 
 *{
