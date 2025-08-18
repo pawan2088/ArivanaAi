@@ -5,10 +5,10 @@ const Section7 = () => {
     return (
         <div>
             <section className='flex flex-col px-10 items-center gap-5'>
-                <div className='border-2 border-base-300 mt-20 p-1 rounded-full'>
-                    <div className=' text-lg font-bold border-2 border-base-300 p-2 rounded-full text-[#474747]'>⁉️ FAQs</div>
+                <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
+                    <div className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747]'>⁉️ FAQs</div>
                 </div>
-                <h1 id='faqs' className='text-4xl font-bold mt-10'>Frequently Asked Questions</h1>
+                <h1 id='faqs' className='sm:text-4xl text-xl font-bold mt-10'>Frequently Asked Questions</h1>
 
                 <div className=' flex  flex-col gap-5'>
                     <div className="collapse collapse-plus  border border-base-300 p-3  bg-base-300">

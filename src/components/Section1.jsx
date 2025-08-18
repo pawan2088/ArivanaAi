@@ -4,7 +4,7 @@ const Section1 = () => {
     return (
         <div className='flex flex-col  py-10 px-5 items-center'>
             <div className='border-2 border-base-300 mt-20 py-3 rounded-full p-2'>
-                <span id='whychooseus' className='text-lg font-bold border-2 border-base-300 p-2 rounded-full'>❓ Why choose us </span>
+                <span id='whychooseus' className='text-lg font-bold border-1 border-base-300 p-2 rounded-full'>❓ Why choose us </span>
             </div>
             <h1 className='sm:text-5xl text-3xl font-semibold text-center pt-8'>Effortless Interview Preparation &</h1><p className='text-center sm:text-5xl text-3xl font-semibold '> Builds Confidence</p>
             <div className='flex w-full gap-10 pt-10 sm:flex-nowrap flex-wrap justify-center'>

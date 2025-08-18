@@ -80,17 +80,17 @@ const Section5 = () => {
   return (
 
     <section className="w-full py-16 flex flex-col items-center bg-gray-50 ">
-      <div className='border-2 border-base-300 mt-20 p-1 rounded-full'>
-        <div id='testimonial' className=' text-lg font-bold border-2 border-base-300 p-2 rounded-full text-[#474747]'> ✨ Testimonials </div>
+      <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
+        <div id='testimonial' className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747]'> ✨ Testimonials </div>
       </div>
-      <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center mt-8">What Our Users Say</h2>
+      <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-center mt-8">What Our Users Say</h2>
       <div className="w-full max-w-6xl px-4 flex flex-col gap-8">
 
         <div className="overflow-hidden w-full py-5">
           <div className="flex gap-8 min-w-max animate-carousel-scroll">
             {testimonials.slice(0, 4).map((t, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center min-w-[250px] max-w-xs">
-                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-2 border-gray-200" />
+                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-1 border-gray-200" />
                 <p className="text-gray-700 italic mb-4 text-center">"{t.quote}"</p>
                 <div className="text-center">
                   <span className="font-semibold text-gray-900">{t.name}</span>
@@ -101,7 +101,7 @@ const Section5 = () => {
 
             {testimonials.slice(0, 4).map((t, idx) => (
               <div key={"dup1-" + idx} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center min-w-[250px] max-w-xs">
-                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-2 border-gray-200" />
+                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-1 border-gray-200" />
                 <p className="text-gray-700 italic mb-4 text-center">"{t.quote}"</p>
                 <div className="text-center">
                   <span className="font-semibold text-gray-900">{t.name}</span>
@@ -116,7 +116,7 @@ const Section5 = () => {
           <div className="flex gap-8 min-w-max animate-carousel-scroll-right">
             {testimonials.slice(4, 8).map((t, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center min-w-[250px] max-w-xs">
-                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-2 border-gray-200" />
+                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-1 border-gray-200" />
                 <p className="text-gray-700 italic mb-4 text-center">"{t.quote}"</p>
                 <div className="text-center">
                   <span className="font-semibold text-gray-900">{t.name}</span>
@@ -127,7 +127,7 @@ const Section5 = () => {
 
             {testimonials.slice(4, 8).map((t, idx) => (
               <div key={"dup2-" + idx} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center min-w-[250px] max-w-xs">
-                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-2 border-gray-200" />
+                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-1 border-gray-200" />
                 <p className="text-gray-700 italic mb-4 text-center">"{t.quote}"</p>
                 <div className="text-center">
                   <span className="font-semibold text-gray-900">{t.name}</span>
@@ -142,7 +142,7 @@ const Section5 = () => {
           <div className="flex gap-8 min-w-max animate-carousel-scroll">
             {testimonials.slice(8, 12).map((t, idx) => (
               <div key={idx} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center min-w-[250px] max-w-xs">
-                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-2 border-gray-200" />
+                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-1 border-gray-200" />
                 <p className="text-gray-700 italic mb-4 text-center">"{t.quote}"</p>
                 <div className="text-center">
                   <span className="font-semibold text-gray-900">{t.name}</span>
@@ -153,7 +153,7 @@ const Section5 = () => {
 
             {testimonials.slice(8, 12).map((t, idx) => (
               <div key={"dup3-" + idx} className="bg-white rounded-xl shadow-lg p-6 flex flex-col items-center min-w-[250px] max-w-xs">
-                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-2 border-gray-200" />
+                <img src={t.image} alt={t.name} className="w-16 h-16 rounded-full mb-4 object-cover border-1 border-gray-200" />
                 <p className="text-gray-700 italic mb-4 text-center">"{t.quote}"</p>
                 <div className="text-center">
                   <span className="font-semibold text-gray-900">{t.name}</span>

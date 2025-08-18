@@ -19,8 +19,8 @@ const Section4 = () => {
         
         <div className='flex flex-col items-center '>
             
-            <div className='border-2 border-base-300 mt-20 p-1 rounded-full'>
-                    <div id='pricing' className=' text-lg font-bold border-2 border-base-300 p-2 rounded-full text-[#474747]'>💰 Pricing</div>
+            <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
+                    <div id='pricing' className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747]'>💰 Pricing</div>
                 </div>
             <p className='sm:text-4xl text-2xl font-medium mt-10 text-center'>Start Preparing Smarter — Without </p>
             <p className='sm:text-4xl text-2xl font-medium text-center '>Breaking the Bank</p>
@@ -35,8 +35,8 @@ const Section4 = () => {
                 <span>
                     Billed Yearly</span>
             </div>
-            <div className='m-5 flex flex-wrap gap-5 justify-center items-center '>
-                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-2 border-gray-100 rounded-2xl px-4 sm:px-8">
+            <div className='mt-5 flex flex-wrap gap-2 w-full justify-center items-center '>
+                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-100 rounded-2xl px-4 sm:px-8">
                     <div className='border-b-1 border-gray-50 flex flex-col gap-5 p-4 py-8 rounded-b-2xl shadow-sm'>
                         <div><img src="https://framerusercontent.com/images/jgVdpmhK03pQ0sFqgkrmN1u1Y.svg" alt="" /></div>
                         <div>
@@ -85,7 +85,7 @@ const Section4 = () => {
                     </div>
                 </div>
 
-                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-2 border-gray-100 rounded-2xl px-4 sm:px-8">
+                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-100 rounded-2xl px-4 sm:px-8">
                     <div className='border-b-1 border-gray-50 flex flex-col gap-5 p-4 py-8 rounded-b-2xl shadow-sm'>
                         <div><img src="https://framerusercontent.com/images/En4lEj9XDauBGTWPq8rrDGuUk.svg" alt="" /></div>
                         <div>
@@ -133,7 +133,7 @@ const Section4 = () => {
                     </div>
                 </div>
 
-                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-2 border-gray-100 rounded-2xl px-4 sm:px-8">
+                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-100 rounded-2xl px-4 sm:px-8">
                     <div className='border-b-1 border-gray-50 flex flex-col gap-5 p-4 py-8 rounded-b-2xl shadow-sm'>
                         <div><img src="https://framerusercontent.com/images/pm0nOe4YNOAoYGJMRClXCtMFWE.svg" alt="" /></div>
                         <div>

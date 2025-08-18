@@ -13,7 +13,7 @@ import Footer from './components/Footer'
 
 const App = () => {
   return (
-    <div className='flex flex-col  justify-center'>
+    <div className=' block mx-auto'>
       <Navbar />
       <Header />
       <Section1 />

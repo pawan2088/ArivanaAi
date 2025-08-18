@@ -1,17 +1,32 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Outfit:wght@100..900&family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Special+Gothic+Expanded+One&display=swap');
+@font-face {
+  font-family: "Clash Grotesk";
+  src: url("./assets/fonts/ClashGrotesk-Regular.ttf");
+}
 @import "tailwindcss";
+
+@theme{
+  --font-ClashGrotesk: "Clash Grotesk", sans-serif;
+}
+
+*{
+  font-family: "Clash Grotesk", sans-serif;
+}
+
 @plugin "daisyui"
   {
   themes: dark --default, light --prefersdark, cupcake;
 }
 
 
-*{
-    font-family: "Space Grotesk"
-}
+
 
 html {
+  background-image: url('./assets/back.png');
   scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-size: contain;
+  overflow-x: hidden;
 }
 
 

@@ -6,13 +6,13 @@ const Section2 = () => {
 
             <section className='flex flex-col justify-center items-center p-10  '>
 
-                <div className='border-2 border-base-300 mt-20 p-1 rounded-full'>
-                    <div className=' sm:text-lg text-md font-bold border-2 border-base-300 p-2 rounded-full'>⭐ Interviews Aced with Arivana AI</div>
+                <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
+                    <div className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full'>⭐ Interviews Aced with Arivana AI</div>
                 </div>
-                <h1 className='sm:text-5xl text-2xl font-medium mt-10'>So Effortless You’ll Want</h1>
-                <h1 className='sm:text-5xl text-2xl font-medium '>to Practice Every Day</h1>
+                <h1 className='sm:text-5xl text-xl font-medium mt-10'>So Effortless You’ll Want</h1>
+                <h1 className='sm:text-5xl text-xl font-medium '>to Practice Every Day</h1>
 
-                <div className="overflow-hidden   sm:max-w-2xl max-w-sm mt-10 ">
+                <div className="overflow-hidden   sm:max-w-2xl max-w-xs mt-10 ">
                     <div className="flex items-center gap-4 w-max  animate-carousel-scroll ">
                         {["https://img.daisyui.com/images/stock/photo-1559703248-dcaaec9fab78.webp",
                             "https://img.daisyui.com/images/stock/photo-1565098772267-60af42b81ef2.webp",

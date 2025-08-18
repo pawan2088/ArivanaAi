@@ -3,7 +3,7 @@ import React from 'react'
 const Header = () => {
     return (
         
-        <div className="w-full flex flex-col items-center mt-2 gap-3">
+        <div className="w-full flex flex-col items-center mt-2 gap-3 ">
             <div className='pt-40'></div>
             <div className="flex items-center gap-3 text-gray-900  border-1 rounded-full p-2 border-gray-300">
                 <span className="inline-flex items-center gap-2 border-1 rounded-full border-gray-300 p-1.5">
@@ -50,8 +50,8 @@ const Header = () => {
                 <h3 className='pl-7 font-extrabold sm:text-lg text-sm'>Trusted by 1,000+ Professionals</h3>
             </div>
 
-           <div className='border-2 border-base-300 mt-20 p-1 rounded-full'>
-             <div className=' text-lg font-bold border-2 border-base-300 p-2 rounded-full'>🎯 Watch Demo</div>
+           <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
+             <div className=' text-lg font-bold border-1 border-base-300 p-2 rounded-full'>🎯 Watch Demo</div>
            </div>
 
 
@@ -63,7 +63,7 @@ const Header = () => {
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; mute"
                 allowFullScreen
-                className='rounded-xl mt-5 sm:w-300 sm:h-150 w-90 h-50 '
+                className='rounded-xl mt-5 sm:w-300 sm:h-150 w-90 h-50 p-2'
             ></iframe>
 
         </div>
