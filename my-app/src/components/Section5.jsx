@@ -80,8 +80,8 @@ const Section5 = () => {
   return (
 
     <section className="w-full py-16 flex flex-col items-center bg-gray-50 ">
-      <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
-        <div id='testimonial' className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747]'> ✨ Testimonials </div>
+      <div className='border-1 border-base-300 mt-20 p-1 rounded-full '>
+        <div id='testimonial' className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747] flex justify-center items-center gap-2'> <img src="/asset 11.webp" alt="" className='w-8'/> Testimonials </div>
       </div>
       <h2 className="text-2xl sm:text-4xl font-bold mb-8 text-center mt-8">What Our Users Say</h2>
       <div className="w-full max-w-6xl px-4 flex flex-col gap-8">

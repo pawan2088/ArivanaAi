@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from "framer-motion"
 
 const Header = () => {
     return (
@@ -16,16 +17,37 @@ const Header = () => {
 
             </div>
             <div className='p-5 text-center'>
-                <h1 className='scale-up-center-normal sm:text-5xl text-3xl font-medium '>Ace Your Job Interviews </h1>
-                <h1 className='scale-up-center-normal sm:text-5xl text-3xl font-medium pt-2'>With AI-Powered Practice & <span className='text-blue-800 scale-up-center-normal' >Feedback</span></h1>
+                                <motion.h1
+                                    className='font-bold sm:text-5xl text-3xl '
+                                    initial={{ opacity: 0, y: -40 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.7 }}
+                                >
+                                    Ace Your Job Interviews
+                                </motion.h1>
+                                <motion.h1
+                                    className='font-bold sm:text-5xl text-3xl  pt-2'
+                                    initial={{ opacity: 0, y: 40 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.7, delay: 0.2 }}
+                                >
+                                    With AI-Powered Practice & <span className='text-blue-800 scale-up-center-normal'>Feedback</span>
+                                </motion.h1>
             </div>
-            <h2 className='sm:text-xl text-lg font-semibold text-[#2b2a2a] ]'>Interview Feedback in Under 15 Minutes</h2>
+                        <motion.h2
+                            className='sm:text-xl text-lg font-semibold text-[#2b2a2a]'
+                            initial={{ opacity: 0, x: -50 }}
+                            animate={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.7, delay: 0.4 }}
+                        >
+                            Interview Feedback in Under 15 Minutes
+                        </motion.h2>
 <a 
   href="https://forms.gle/kxsdUPRRgZrezc2X9" 
   target="_blank" 
   rel="noopener noreferrer"
 >
-  <button className="font-semibold bg-gradient-to-b from-gray-900 to-black py-4 px-8 mt-5 rounded-full text-white">
+  <button className="cursor-pointer hover:scale-102 duration-300 font-semibold bg-gradient-to-b from-gray-900 to-black py-4 px-8 mt-5 rounded-full text-white">
     Start Your First Mock Interview Now
   </button>
 </a>
@@ -54,13 +76,29 @@ const Header = () => {
                     className="inline-block sm:size-6 size-6 rounded-full ring-2 ring-gray-900 outline -outline-offset-1 outline-white/10"
                 />
 
-                <h3 className='pl-7 font-extrabold sm:text-lg text-sm'>Trusted by 1,000+ Professionals</h3>
+                                <motion.h3
+                                    className='pl-7 font-extrabold sm:text-lg text-sm'
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ duration: 0.7, delay: 0.6 }}
+                                >
+                                    Trusted by 1,000+ Professionals
+                                </motion.h3>
             </div>
 
            <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
-             <div className=' text-lg font-bold border-1 border-base-300 p-2 rounded-full'>🎯 Watch Demo</div>
+                         <motion.div
+                             className='text-lg font-bold border-1 border-base-300 p-2 rounded-full'
+                             initial={{ opacity: 0, y: 30 }}
+                             animate={{ opacity: 1, y: 0 }}
+                             transition={{ duration: 0.7, delay: 0.8 }}
+                         >
+                             <div className='flex gap-2 justify-between items-center'>
+                                <img src="/ZLo97rlCn7IxmKOdE5Y5dTChG4.avif" alt="" className='w-8'/> <span>Watch Demo</span>
+                             </div>
+                         </motion.div>
            </div>
-
+ 
 
 
 <iframe

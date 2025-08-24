@@ -1,51 +1,90 @@
 import React, { useState } from 'react'
+import { motion } from 'framer-motion'
 
 const Section4 = () => {
-    const billChange = () =>{
+    const billChange = () => {
         const toggle = document.querySelector("#toggle")
-        if(toggle.checked){
+        if (toggle.checked) {
             setYearly(true)
-        }else{
+        } else {
             setYearly(false)
         }
-        
-        
+
+
     }
 
     const [yearly, setYearly] = useState(false);
 
     return (
-        
-        
+
+
         <div className='flex flex-col items-center '>
-            
+
             <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
-                    <div id='pricing' className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747]'>💰 Pricing</div>
-                </div>
-            <p className='sm:text-4xl text-2xl font-medium mt-10 text-center'>Start Preparing Smarter — Without </p>
-            <p className='sm:text-4xl text-2xl font-medium text-center '>Breaking the Bank</p>
+                <motion.div
+                    id='pricing'
+                    className='sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full text-[#474747] flex justify-center items-center gap-2'
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    whileInView={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.7 }}
+                >   <img src="asset 17.png" alt="" className='w-8'/>
+                     Pricing
+                </motion.div>
+            </div>
+            <motion.p
+                className='sm:text-4xl text-2xl font-bold mt-10 text-center'
+                initial={{ opacity: 0, y: -40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.2 }}
+            >
+                Start Preparing Smarter — Without
+            </motion.p>
+            <motion.p
+                className='sm:text-4xl text-2xl font-bold text-center'
+                initial={{ opacity: 0, y: 40 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+            >
+                Breaking the Bank
+            </motion.p>
             <div className='flex center gap-3 text-lg font-bold mt-10'>
-                <span>Billed Monthly</span>
+                <motion.span
+                    initial={{ opacity: 0, x: -20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Billed Monthly
+                </motion.span>
                 <input
                     type="checkbox"
                     id='toggle'
                     onClick={billChange}
                     className="toggle border-gray-200 bg-white checked:border-orange-500 checked:bg-orange-400 checked:text-black"
                 />
-                <span>
-                    Billed Yearly</span>
+                <motion.span
+                    initial={{ opacity: 0, x: 20 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.5 }}
+                >
+                    Billed Yearly
+                </motion.span>
             </div>
-            <div className='mt-5 flex flex-wrap gap-2 w-full justify-center items-center '>
-                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-100 rounded-2xl px-4 sm:px-8">
+            <div className='mt-5 flex flex-wrap gap-4 w-full justify-center items-center p-4'>
+                <motion.div
+                    className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-300 rounded-2xl px-4 sm:px-8"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7 }}
+                >
                     <div className='border-b-1 border-gray-50 flex flex-col gap-5 p-4 py-8 rounded-b-2xl shadow-sm'>
                         <div><img src="https://framerusercontent.com/images/jgVdpmhK03pQ0sFqgkrmN1u1Y.svg" alt="" /></div>
                         <div>
-                            <h1 className='text-2xl font-semibold'>Starter</h1>
-                            <p className='text-[#474747]'>Perfect for Job Seekers Getting Started</p>
+                            <motion.h1 className='text-2xl font-semibold' initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>Starter</motion.h1>
+                            <motion.p className='text-[#474747]' initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>Perfect for Job Seekers Getting Started fresh</motion.p>
                         </div>
-                        
+
                         <div>
-                            <span className='text-4xl'>{yearly?'₹1,299':'₹1,499'}</span><span>{yearly?'/ per month':'/ month'}</span>
+                            <span className='text-4xl'>{yearly ? '₹1,299' : '₹1,499'}</span><span>{yearly ? '/ per month' : '/ month'}</span>
                             <p className='text-[#474747]'>~ 4 AI mock interviews</p>
                         </div>
                     </div>
@@ -83,17 +122,22 @@ const Section4 = () => {
                             <button className="btn bg-black py-6 rounded-xl text-white  btn-block">Subscribe</button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-100 rounded-2xl px-4 sm:px-8">
+                <motion.div
+                    className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-300 rounded-2xl px-4 sm:px-8"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.1 }}
+                >
                     <div className='border-b-1 border-gray-50 flex flex-col gap-5 p-4 py-8 rounded-b-2xl shadow-sm'>
                         <div><img src="https://framerusercontent.com/images/En4lEj9XDauBGTWPq8rrDGuUk.svg" alt="" /></div>
                         <div>
-                            <h1 className='text-2xl font-semibold'>Pro</h1>
-                            <p className='text-[#474747]'>For Serious Candidates & Career Switchers</p>
+                            <motion.h1 className='text-2xl font-semibold' initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>Pro</motion.h1>
+                            <motion.p className='text-[#474747]' initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>For Serious Candidates & Career Switchers</motion.p>
                         </div>
                         <div>
-                            <span className='text-4xl'>{yearly?'₹3,099':'₹3,499'}</span><span>{yearly?'/ per month':'/ month'}</span>
+                            <span className='text-4xl'>{yearly ? '₹3,099' : '₹3,499'}</span><span>{yearly ? '/ per month' : '/ month'}</span>
                             <p className='text-[#474747]'>~ 10 AI mock interviews</p>
                         </div>
                     </div>
@@ -131,17 +175,22 @@ const Section4 = () => {
                             <button className="btn bg-black py-6 rounded-xl text-white  btn-block">Subscribe</button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
 
-                <div className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-100 rounded-2xl px-4 sm:px-8">
+                <motion.div
+                    className="card w-full max-w-sm mx-2 bg-white shadow-sm border-1 border-gray-300 rounded-2xl px-4 sm:px-8"
+                    initial={{ opacity: 0, y: 40 }}
+                    whileInView={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.7, delay: 0.2 }}
+                >
                     <div className='border-b-1 border-gray-50 flex flex-col gap-5 p-4 py-8 rounded-b-2xl shadow-sm'>
                         <div><img src="https://framerusercontent.com/images/pm0nOe4YNOAoYGJMRClXCtMFWE.svg" alt="" /></div>
                         <div>
-                            <h1 className='text-2xl font-semibold'>Teams</h1>
-                            <p className='text-[#474747]'>For Colleges, Bootcamps & Career Services</p>
+                            <motion.h1 className='text-2xl font-semibold' initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>Teams</motion.h1>
+                            <motion.p className='text-[#474747]' initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }}>For Colleges, Bootcamps & Career Services</motion.p>
                         </div>
                         <div>
-                            <span className='text-4xl'>{yearly?'₹4,999':'₹5,499'}</span><span>{yearly?'/ per month':'/ month'}</span>
+                            <span className='text-4xl'>{yearly ? '₹4,999' : '₹5,499'}</span><span>{yearly ? '/ per month' : '/ month'}</span>
                             <p className='text-[#474747]'>~ 15 AI mock interviews</p>
                         </div>
                     </div>
@@ -179,7 +228,7 @@ const Section4 = () => {
                             <button className="btn bg-black py-6 rounded-xl text-white  btn-block">Enquire</button>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             </div>
         </div>
     )

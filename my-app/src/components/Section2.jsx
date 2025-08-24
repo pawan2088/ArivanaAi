@@ -1,4 +1,5 @@
 import React from 'react'
+import { motion } from 'framer-motion'
 
 const Section2 = () => {
     return (
@@ -7,10 +8,31 @@ const Section2 = () => {
             <section className='flex flex-col justify-center items-center p-10  '>
 
                 <div className='border-1 border-base-300 mt-20 p-1 rounded-full'>
-                    <div className=' sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full'>⭐ Interviews Aced with Arivana AI</div>
+                                        <motion.div
+                                            className='sm:text-lg text-sm font-bold border-1 border-base-300 p-2 rounded-full flex justify-center items-center'
+                                            initial={{ opacity: 0, scale: 0.8 }}
+                                            whileInView={{ opacity: 1, scale: 1 }}
+                                            transition={{ duration: 0.7 }}
+                                        >   <img src="/asset 10.png" alt="" className='w-8'/>
+                                             Interviews Aced with Arivana AI
+                                        </motion.div>
                 </div>
-                <h1 className='sm:text-5xl text-xl font-medium mt-10'>So Effortless You’ll Want</h1>
-                <h1 className='sm:text-5xl text-xl font-medium '>to Practice Every Day</h1>
+                                <motion.h1
+                                    className='sm:text-5xl text-xl  mt-10 font-bold'
+                                    initial={{ opacity: 0, y: -40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.7, delay: 0.2 }}
+                                >
+                                    So Effortless You’ll Want
+                                </motion.h1>
+                                <motion.h1
+                                    className='sm:text-5xl text-xl font-bold'
+                                    initial={{ opacity: 0, y: 40 }}
+                                    whileInView={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.7, delay: 0.4 }}
+                                >
+                                    to Practice Every Day
+                                </motion.h1>
 
                 <div className="overflow-hidden   sm:max-w-2xl max-w-xs mt-10 ">
                     <div className="flex items-center gap-4 w-max  animate-carousel-scroll ">
